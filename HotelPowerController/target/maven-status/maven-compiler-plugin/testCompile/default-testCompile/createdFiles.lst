@@ -1,0 +1,15 @@
+com/sahaj/interview/builder/HotelBuilderTest.class
+com/sahaj/interview/entity/BuildingTest.class
+com/sahaj/interview/Motion/MotionTest.class
+com/sahaj/interview/parser/BuildingParserTest.class
+com/sahaj/interview/equipment/ACTest.class
+com/sahaj/interview/entity/FloorTest.class
+com/sahaj/interview/Criteria/PowerCriteriaTest.class
+com/sahaj/interview/entity/HotelTest.class
+com/sahaj/interview/parser/FloorParserTest.class
+com/sahaj/interview/PowerController/PowerControllerTest.class
+com/sahaj/interview/equipment/LightTest.class
+com/sahaj/interview/entity/SubCorridorTest.class
+com/sahaj/interview/parser/InputParserTest.class
+com/sahaj/interview/parser/CorridorParserTest.class
+com/sahaj/interview/entity/MainCorridorTest.class

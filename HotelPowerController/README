@@ -1,0 +1,35 @@
+This README file explains how to compile, run this Sensor Input based Power Controller for Hotel Management on OSX or DEBIAN platform.
+
+
+----PRE REQUISITES-----
+Needs following software to be present in the system running this program.
+1. Java 7 or higher
+2. Maven 2 or higher
+3. junit 4 or higher
+
+
+----COMPILE INSTRUCTIONS-----
+To run unit tests and compile code : mvn -q clean install
+
+To compile code without running unit tests : mvn -q clean install -DskipTests=true
+
+Maven install goal can generate JAR artifact - sahaj#v1.jar
+
+surefire-reports directory under the target folder in the project has the details and results of the tests run. All java source code is under src/main/java folder. All junit tests source code is under src/test/java.
+
+-------IDE INSTRUCTIONS---------
+
+To import this maven project into eclipse : From the project root directory, type in mvn eclipse:clean && mvn eclipse:eclipse. Then open eclipse -> Import existing projects -> choose the project root directory from the file system.
+
+
+-----RUN INSTRUCTIONS -----
+
+To run program : mvn -q exec:java
+
+The program waits to read from STDIN for number of floors, number of main corridors and number of sub corridors( All positive integers ). Once the user enters these values, hotel is constructed and initialized and the initial equipment states in the hotel is printed to the stdout. Then the sensor input prompt will wait for the user in stdin to input some commands. Valid input will be one of the following forms. 
+
+1. To report movement : Movement in Floor <FloorNum> , Sub Corridor <SubCorridorNum>
+2. To report lack of movement : No Movement in Floor <FloorNum> , Sub Corridor <SubCorridorNum> for a minute
+3. To exit from the application : quit
+
+Each time a sensor input is being read, the controller will come into action doing the needful ( of switching ON/OFF Lights and/or ACs in the given floor ) and the hotel equipment states floor wise and corridor wise will be printed in the stdout.

@@ -1,0 +1,8 @@
+Package:com.paypal.test
+Priority: optional
+Maintainer: rajagopal.ravikumar@gmail.com
+Section: paypal-v1
+Architecture: all
+Version: DaVersion
+Depends: tomcat7 (>= 7.0), libtomcat7-java(>= 7.0)
+Description: paypal test program
